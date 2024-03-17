@@ -34,9 +34,12 @@ export default async function Page(props: Props) {
               minHeight: "35vh" // Zoom a bit in, because image is rather small on big screens
             }} />
         </div>
-        <p className="mt-4 mb-8 mx-72 text-xl italic text-center">{comic.alt}</p>
-        <div className="fixed right-5 bottom-3 text-3xl text-right">
+        <p className="mt-4 mb-[50px] mx-72 text-2xl italic text-center">{comic.alt}</p>
+        <div className="fixed bottom-3 text-xl left-5 text-left">
           www.xkcd.com
+        </div>
+          <div className="fixed bottom-3 text-xl right-5 text-right">
+          github.com/michidk/XKCD-Fullscreen
         </div>
       </div>
     );
