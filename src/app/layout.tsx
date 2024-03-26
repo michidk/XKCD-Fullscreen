@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "./globals.css";
 import type { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
@@ -36,7 +36,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="en">
 			<head />
-			<body className="min-h-screen h-screen bg-background font-sans antialiased">
+			<body className="min-h-screen h-screen font-sans antialiased">
 				{children}
 			</body>
 		</html>
