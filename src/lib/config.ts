@@ -14,8 +14,8 @@ function getServerUrl(): string {
 	);
 }
 
-export type SiteConfig = typeof site;
-export const site = {
+export type SiteConfig = typeof siteConfig;
+export const siteConfig = {
 	name: "XKCD Fullscreen",
 	description: "A simple XKCD fullscreen viewer built for digitale signage.",
 	links: {
