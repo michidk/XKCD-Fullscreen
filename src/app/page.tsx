@@ -3,11 +3,11 @@
 import { type ComicResponse, getByIndex, getRandom } from "@/lib/xkcd";
 
 type Props = {
-	searchParams: { [key: string]: string | string[] | undefined };
+	searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 export default async function Page(props: Props) {
-	const searchParams = props.searchParams;
+	const searchParams = (await props.searchParams);
 	const comicId = searchParams.id as string;
 	const comicNumber = Number.parseInt(comicId, 10);
 
