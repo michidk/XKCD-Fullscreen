@@ -7,12 +7,12 @@ type Props = {
 };
 
 export default async function Page(props: Props) {
-	const searchParams = (await props.searchParams);
+	const searchParams = await props.searchParams;
 	const comicId = searchParams.id as string;
 	const comicNumber = Number.parseInt(comicId, 10);
 
 	try {
-		let comic: ComicResponse | undefined = undefined;
+		let comic: ComicResponse | undefined;
 		if (comicNumber) {
 			comic = await getByIndex(comicNumber);
 		} else {

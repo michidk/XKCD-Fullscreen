@@ -65,7 +65,7 @@ export async function getRandom(): Promise<ComicResponse> {
 	const latestComic = await getLatest();
 	if (typeof latestComic === "string") throw new Error(latestComic);
 
-	let whitelistedRandom: number | undefined = undefined;
+	let whitelistedRandom: number | undefined;
 	do {
 		whitelistedRandom = randomIntFromInterval(1, latestComic.num);
 	} while (BLACKLIST.includes(whitelistedRandom));
