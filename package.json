@@ -14,9 +14,9 @@
     "unsafe": "bunx @biomejs/biome check --apply-unsafe ./src *js *.ts *.json"
   },
   "dependencies": {
-    "next": "15.5.27",
-    "react": "19.0.0-rc-fb9a90fa48-20240614",
-    "react-dom": "19.0.0-rc-fb9a90fa48-20240614"
+    "next": "15.5.28",
+    "react": "19.0.9",
+    "react-dom": "19.0.9"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
