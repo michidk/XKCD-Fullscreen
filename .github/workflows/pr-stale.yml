@@ -9,14 +9,14 @@ permissions:
 
 jobs:
   stale:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
       issues: write
       pull-requests: write
     steps:
         # https://github.com/actions/stale
-        - uses: actions/stale@v9
+        - uses: actions/stale@4391f3da665fdf50b6810c1a66712fb9ba21aa93 # v11
           with:
             repo-token: ${{ secrets.GITHUB_TOKEN }}
             days-before-stale: 14
