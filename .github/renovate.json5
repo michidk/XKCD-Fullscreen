@@ -2,6 +2,6 @@
   "enabled": false,
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>michidk/workflows//templates/renovate"
+    "github>michidk/workflows//templates/presets/renovate"
   ]
 }
