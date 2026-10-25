@@ -9,9 +9,9 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "bunx @biomejs/biome lint ./src",
-		"fmt": "bunx @biomejs/biome format --write ./src *.js *.ts *.json",
-		"fix": "bunx @biomejs/biome check --apply ./src *.js *.ts *.json",
-		"unsafe": "bunx @biomejs/biome check --apply-unsafe ./src *js *.ts *.json"
+		"fmt": "bunx @biomejs/biome format --write ./src *.js *.json",
+		"fix": "bunx @biomejs/biome check --write ./src *.js *.json",
+		"unsafe": "bunx @biomejs/biome check --write --unsafe ./src *.js *.json"
 	},
 	"dependencies": {
 		"next": "15.5.28",
