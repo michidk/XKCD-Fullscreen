@@ -39,11 +39,8 @@ jobs:
       - name: Build application
         run: bun run build
 
-      - uses: mongolyy/reviewdog-action-biome@4449276b58c4687dd64f64a50415486110dc9285 # v2
-        with:
-          reporter: 'github-check'
-          fail_on_error: true
-          biome_flags: './src *.js *.json'
+      - name: Check formatting and lint
+        run: bunx biome check ./src *.js *.json
 
   typos:
     name: typos (Spellchecker)
